@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, { useEffect, useState} from 'react';
 import './RecipeData.css';
 import {useLocation, useNavigate} from 'react-router-dom';
 import axios from 'axios'; 

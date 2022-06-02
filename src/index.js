@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Recipes from './screens/Recipes';
 import RecipeData from './screens/RecipeData';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
