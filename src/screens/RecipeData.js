@@ -32,7 +32,7 @@ const RecipeData = () => {
       }, [])
     return(
         <div className="App">
-            <div>
+            <div className='App-Bar'>
                 <h3 className='Main-Text'>SOUS CHEF</h3>
             </div>
             <header className="App-header">
