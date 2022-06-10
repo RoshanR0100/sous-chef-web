@@ -46,7 +46,8 @@ function Recipes() {
                             })}
                         </div>
                     } */}
-                    {recipeList.map((item) => {
+                    {recipeList.length ? 
+                        recipeList.map((item) => {
                         return(
                         <div key={item.id} className='Options-Card'>
                             <h3 className='Header-Text'>{item.title}</h3>
@@ -55,11 +56,13 @@ function Recipes() {
                                 src= {item.image}
                                 />
                             <button className='Button-Text' onClick={()=> {navigate('/RecipeData', {state: item.id,})}}>
-                             SHOW ME THE RECIPE!
+                            SHOW ME THE RECIPE!
                             </button>
                         </div>
                         )
-                    })}
+                        }) :
+                        <h3 className='Header-Text'>Sorry, we couldn't find a recipe for you in our database.</h3>
+                    }
                 </div>
           </header>
         </div>
