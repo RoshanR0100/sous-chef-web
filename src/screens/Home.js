@@ -42,7 +42,7 @@ function Home() {
   const [Potato, setPotato] = useState(false);
 
   const Submit = () => {
-      const param_Key = '&includeIngredients=' + includeIngredients +  '&diet=' + diet + '&intolerances=' + intolerances + '&';
+      const param_Key = '&includeIngredients=' + includeIngredients +  '&diet=' + diet + '&intolerances=' + intolerances + '&numbers=100&';
       navigate('/Recipes', {state: { paramKey: param_Key}})
       console.log(param_Key);
   }
